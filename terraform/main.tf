@@ -71,7 +71,7 @@ resource "azurerm_network_security_rule" "SSH_rule" {
 }
 
 resource "azurerm_network_security_rule" "WEB_rule" {
-    name                       = "WEB_80_HTTP"
+    name                       = "WEB_80"
     priority                   = 1002
     direction                  = "Inbound"
     access                     = "Allow"

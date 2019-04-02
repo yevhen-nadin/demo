@@ -1,5 +1,5 @@
 # Configure the Microsoft Azure Provider
-provider "azurerm__"  {
+provider "azurerm"  {
 
 }
 

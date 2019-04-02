@@ -1,5 +1,5 @@
 # Configure the Microsoft Azure Provider
-provider "azurerm"  {
+provider "azurerm__"  {
 
 }
 
@@ -74,7 +74,7 @@ resource "azurerm_network_security_rule" "WEB_rule" {
     name                       = "WEB_80"
     priority                   = 1002
     direction                  = "Inbound"
-    access                     = "Allow"
+    access                     = "Deny"
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "80"

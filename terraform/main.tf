@@ -184,16 +184,3 @@ EOF
         environment = "${var.default_environment_tag}"
     }
 }
-
-# Create a random generator dpending on IP
-resource "random_id" "test" {
-  byte_length = 1
-  prefix = "${azurerm_public_ip.myterraformpublicip.ip_address}"
-	
-  depends_on = ["azurerm_public_ip.myterraformpublicip"]
-}
-
-output "test_rand_ip" {
-  value = "${random_id.test.prefix}"
-}
-

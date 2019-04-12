@@ -190,7 +190,7 @@ resource "random_id" "test" {
   byte_length = 1
   prefix = "${azurerm_public_ip.myterraformpublicip.ip_address}"
 	
-  depends_on = ["${azurerm_public_ip.myterraformpublicip.ip_address}"]
+  depends_on = ["azurerm_public_ip.myterraformpublicip.ip_address"]
 }
 
 output "test_rand_ip" {

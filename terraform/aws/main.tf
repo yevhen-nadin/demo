@@ -7,7 +7,7 @@ resource "aws_instance" "test_VM" {
   ami           = "ami-09def150731bdbcc2"
   instance_type = "t2.micro"
   
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   
   user_data = "${file("userdata.sh")}"
 

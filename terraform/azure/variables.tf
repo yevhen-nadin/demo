@@ -1,18 +1,18 @@
 variable "resourcename" {
-  default = "terraformResourceGroup"
+  default = "webRG"
   description = "Name for resource group to create VM in"
 }
 
 variable "prefix" {
-    default = "la"
+    default = "web"
 }
 
 variable "vm_name" {
-  default = "vmFromTf"
+  default = "webVmM
   description = "Name for VM to be created"
 }
 
 variable "default_environment_tag" {
-  default = "m3tf"
+  default = "web"
   description = "Default environment tag for the resources of stack"
 }

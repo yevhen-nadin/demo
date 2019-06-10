@@ -8,7 +8,7 @@ variable "prefix" {
 }
 
 variable "vm_name" {
-  default = "webVmM
+  default = "webVmM"
   description = "Name for VM to be created"
 }
 

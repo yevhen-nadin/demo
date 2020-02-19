@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo yum install -y lighttpd
+sudo yum install -y nginx

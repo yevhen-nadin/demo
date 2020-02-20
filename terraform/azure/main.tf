@@ -166,7 +166,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
 		admin_password = "SuperChocoPass&*SaghJ123!"
         custom_data    = <<EOF
 #!/bin/bash
-sudo apt-get install -y lighttpd
+sudo apt-get install -y nginx
 EOF
     }
 

@@ -5,6 +5,7 @@ provider "aws" {
 
 variable "vm_name" {
   description = "Name for VM to be created"
+  default = "Demo WEB page"
 }
 
 resource "aws_security_group" "allow_http" {

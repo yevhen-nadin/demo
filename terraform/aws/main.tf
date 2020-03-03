@@ -2,6 +2,10 @@ provider "aws" {
   region = "eu-central-1"
 }
   
+resource "random_id" "sec" {
+  byte_length = 8
+}
+
 
 variable "vm_name" {
   description = "Name for VM to be created"
@@ -9,7 +13,7 @@ variable "vm_name" {
 }
 
 resource "aws_security_group" "allow_http" {
-  name        = "allow_all_http_demo"
+  name        = "allow_all_http_demo_${random_id.sec.hex}"
   description = "Allow HTTP inbound traffic for Demo purpose"
 
   ingress {

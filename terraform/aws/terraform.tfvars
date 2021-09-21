@@ -1,2 +1,2 @@
 vm_name = "Test tfvars"
-region = "eu-central-1"
+test_var = "eu-central-1"

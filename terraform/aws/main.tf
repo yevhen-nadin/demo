@@ -1,6 +1,6 @@
 provider "aws" {
   region = "eu-central-1"
-  version = "v2.70.0"
+  # version = "v2.70.0"
 }
 
   
@@ -14,7 +14,7 @@ resource "aws_instance" "test_VM" {
   user_data = "${file("userdata.sh")}"
 
   tags {
-    Name = "${var.vm_name}"
+    Name = var.vm_name
   }
 }
 

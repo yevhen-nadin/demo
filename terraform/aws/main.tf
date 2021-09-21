@@ -13,7 +13,7 @@ resource "aws_instance" "test_VM" {
   
   user_data = "${file("userdata.sh")}"
 
-  tags {
+  tags = {
     Name = var.vm_name
   }
 }

@@ -1,2 +1,2 @@
-vm_name = "Test tfvars"
+vm_name = "Webhook"
 test_var = "eu-central-1"

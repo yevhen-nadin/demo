@@ -2,7 +2,6 @@ provider "aws" {
   region = "us-east-2"
   # version = "v2.70.0"
 }
-
   
 resource "aws_instance" "test_VM" {
   # Amazon Linux AMI 2017.03.1 (HVM)

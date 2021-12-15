@@ -25,7 +25,7 @@ variable "tags" {
 }
 
 variable "vm_region" {
-  default = "us-east-2"
+  default = "eu-west-1"
   description = "Default region"
 }
 

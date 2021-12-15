@@ -17,9 +17,13 @@ resource "aws_instance" "test_VM" {
   }
 }
 
-variable "vm_name" {
-  default = "demo1"
-  description = "Name for VM to be created"
+variable "tags" {
+   type = map
+   description = "Tags to be set on VM"
+   default = {
+      Name = "Demo VM"
+      Environment = "QA"
+   }
 }
 
 variable "vm_region" {

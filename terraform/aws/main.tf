@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_instance" "test_VM" {
   # Amazon Linux AMI 2017.03.1 (HVM)
   ami           = var.vm_ami # us-east-2 "ami-00dfe2c7ce89a450b" eu-central-1 "ami-07df274a488ca9195"
-  instance_type = "t2.micro"
+  instance_type = "t3.small"
   
   associate_public_ip_address = true
   
